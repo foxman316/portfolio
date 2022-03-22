@@ -89,3 +89,9 @@ border-radius: 50%;
 width: 400px;
 margin-left: 30px;
 }
+
+.work {
+width: 960px;
+text-align: center;
+margin: 300px auto 5px auto;
+}

@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+body {
+font-family: serif;
+}
+
+
+
+.top{
+animation-name:fade-in;
+animation-duration:4s;
+animation-timing-function: ease-out;
+animation-delay:0s;
+animation-iteration-count:1;
+animation-direction:normal;
+animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+0% {opacity: 0}
+100% {opacity: 1}
+}
+
+.name {
+width: 600px;
+text-align: center;
+font-size: 32px;
+margin: 200px auto 0px auto;
+}
+
+.lead {
+width: 600px;
+text-align: center;
+font-family: serif;
+font-size: 88px;
+margin: auto;
+}
+
+.arrow {
+width: 600px;
+text-align: center;
+font-size: 88px;
+margin: 200px auto 0px auto;
+}

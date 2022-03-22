@@ -14,12 +14,12 @@
     <div class="top">
         <div class="name">DAIKI NAKAZONO</div>
         <div class="lead">PORTFOLIO</div>
-        <div class="arrow"><a href="#work"><i class="fas fa-chevron-circle-down"></i></a></div>
+        <div class="arrow"><a href="#pro"><i class="fas fa-chevron-circle-down"></i></a></div>
     </div>
 
 <!--プロフ-->
 <div class="profile" data-0="opacity:0;" data-bottom-top="transform:translateX(-200px);" data-center-center="transform:translateX(0px); opacity:1;">
-    <h2 class="pro">プロフィール</h2>
+    <h2 id="pro">プロフィール</h2>
     <div class="flex">
     <div class="profile_img"><img src="img/profile.jpg" class="profile_img" alt="プロフィール画像"></div>
     <div class="profile_txt">
@@ -30,8 +30,8 @@
 
     <!--制作実績-->
 <div class="work">
-    <h2 id="work">制作実績</h2>
-    <div class="swiper-container">
+<h2 id="work">制作実績</h2>
+<div class="swiper-container">
         <div class="swiper-wrapper">
             <ul class="ul">
             <li class="li"><div class="swiper-slide"><a href="https://calendar-my.herokuapp.com/"><img src="img/google calendar.jpg" class="gazo"><p>google calendar<!--スクールの開発課題(laravel)で作成したgoogle calendarです。開発課題のテーマ決めで課題を進めていく上で提出期限やミーティングの日程管理が大事だと思ったからです。--></p></a></div></li>
@@ -45,4 +45,75 @@
 </div>
 <div class="skill" data-0="opacity:0;" data-bottom-top="transform:translateX(200px);" data-center-center="transform:translateX(0px); opacity:1;">
 
-    
+<!--スキル-->
+<h2>スキル</h2>
+<table>
+<tr>
+<th>HTML</th>
+<td><i class="fa-thin fa-balloon"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+</tr>
+<tr>
+<th>CSS</th>
+<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+</tr>
+<tr>
+<th>JavaScript</th>
+<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+</tr>
+<tr>
+<tr>
+<th>PHP</th>
+<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+</tr>
+<th>jQuery</th>
+<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+</tr>
+<tr>
+<th>laravel</th>
+<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></td>
+</tr>
+</table>
+</div>
+<div class="contact" data-0="opacity:0;" data-bottom-top="transform:scale(0) rotate(0deg);" data-center-center="transform:scale(1) rotate(360deg); opacity:1;">
+</div>
+<!--gitリンク-->
+<h2 class="inquiries">GIT HUBリンク</h2>
+<a href="https://github.com/foxman316"><div class="git"><i class="fa-brands fa-github" style="color: green"></i>GIT HUBリンク</div></a>
+</div>
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+effect: 'coverflow',
+slidesPerView: 2,
+centeredSlides: true,
+loop: true,
+coverflowEffect: {
+slideShadows: true,
+},
+pagination: {
+el: '.swiper-pagination',
+clickable: true,
+},
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+})
+skrollr.init({
+beforerender: function(data) {
+return data.curTop > data.lastTop;
+}
+});
+$(function() {
+$('a[href^="#"]').click(function() {
+var speed = 400;
+var href= $(this).attr("href");
+var target = $(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top;
+$('body,html').animate({scrollTop:position}, speed, 'swing');
+return false;
+});
+});
+</script>
+</body>
+</html>
+

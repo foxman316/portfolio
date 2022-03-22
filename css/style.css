@@ -95,3 +95,67 @@ width: 960px;
 text-align: center;
 margin: 300px auto 5px auto;
 }
+
+.skill {
+width: 600px;
+text-align: center;
+margin: 250px auto 0px auto;
+}
+
+table, td, th {
+border-collapse: collapse;
+border: 1px #707070 solid;
+}
+
+table {
+margin: auto;
+}
+
+th {
+width: 200px;
+padding: 10px;
+font-weight: bold;
+}
+
+td {
+width: 400px;
+padding: 10px;
+color: #7fbfff;
+}
+
+.contact {
+width: 600px;
+text-align: center;
+margin: 250px auto 0px auto;
+}
+
+    /*.inquiries{
+    text-align: center;
+    }
+    
+    .mail {
+    font-size: 20px;
+    text-align: center;
+    }
+    
+    .twitter {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    }*/
+    
+.inquiries{
+text-align: center;
+}
+
+.git {
+font-size: 20px;
+text-align: center;
+}
+
+
+
+a {
+text-decoration: none;
+color: #333333;
+}
